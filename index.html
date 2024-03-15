@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name </label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Enter your name"
+          required
+        />
+        <label id="email-label" for="email">Email </label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+        <label id="number-label" for="number">Age (optional)</label>
+        <input
+          id="number"
+          name="number"
+          type="number"
+          min="10"
+          max="99"
+          placeholder="Age"
+        />
+        <label for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <select id="dropdown" name="dropdown">
+          <option value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        <label for="definitely"
+          ><input
+            id="definitely"
+            type="radio"
+            name="user-recommend"
+            value="definitely"
+            class="inline"
+          />
+          Definitely</label
+        >
+        <label for="maybe"
+          ><input
+            id="maybe"
+            type="radio"
+            name="user-recommend"
+            value="maybe"
+            class="inline"
+          />
+          Maybe</label
+        >
+        <label for="not-sure"
+          ><input
+            id="not-sure"
+            type="radio"
+            name="user-recommend"
+            value="not-sure"
+            class="inline"
+          />
+          Not sure</label
+        >
+
+        <label for="feature"
+          >What is your favorite feature of freeCodeCamp?</label
+        >
+        <select id="feature" name="feature">
+          <option value="">Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="openSource">Open Source</option>
+        </select>
+        <label
+          >What would you like to see improved? (Check all that apply)</label
+        >
+        <label
+          ><input type="checkbox" value="front" /> Front-end Projects</label
+        >
+        <label><input type="checkbox" value="back" /> Back-end Projects</label>
+        <label><input type="checkbox" value="data" /> Data Visualization</label>
+        <label><input type="checkbox" value="challenges" /> Challenges</label>
+        <label
+          ><input type="checkbox" value="open" /> Open Source Community</label
+        >
+        <label><input type="checkbox" value="help" /> Gitter help rooms</label>
+        <label><input type="checkbox" value="videos" /> Videos</label>
+        <label><input type="checkbox" value="meetups" /> City Meetups</label>
+        <label><input type="checkbox" value="wiki" /> Wiki </label>
+        <label><input type="checkbox" value="forum" /> Forum</label>
+        <label
+          ><input type="checkbox" value="additional" /> Additional
+          Courses</label
+        >
+        <label
+          >Any comments or suggestions?
+          <textarea
+            id="bio"
+            name="bio"
+            rows="5"
+            cols="40"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
